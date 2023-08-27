@@ -5,13 +5,23 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'singleElementAnimation',
       component: () => import('../views/SingleElementView.vue')
     },
     {
       path: '/group',
-      name: 'group',
+      name: 'groupElementAnimation',
       component: () => import('../views/GroupView.vue')
+    },
+    {
+      path: '/home',
+      name: 'homePage',
+      component: () => import('../views/HomePageView.vue')
+    },
+    {
+      path: '/about',
+      name: 'aboutPage',
+      component: () => import('../views/AboutPageView.vue')
     }
   ] 
 })

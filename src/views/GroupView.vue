@@ -25,7 +25,7 @@ const deleteItem = (itemId) => {
 <template>
     <div class="container mx-auto flex flex-col justify-center items-center">
         <div class="flex flex-col justify-center items-center gap-10 w-full mt-10">
-            <input @keypress.enter="addNewItem" v-model="itemName" type="text" class="shadow-md w-1/4 p-2">
+            <input @keypress.enter="addNewItem" v-model="itemName" type="text" class="shadow-md w-1/4 p-2" placeholder="Enter Name">
             <ul class="flex flex-col gap-3 w-1/4 justify-center items-center relative">
                 <TransitionGroup name="items">
                     <li v-for="item in items.items" :key="item.id" @click="deleteItem(item.id)" 

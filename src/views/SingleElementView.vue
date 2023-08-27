@@ -4,7 +4,7 @@ const showGreed = ref(true)
 </script>
 
 <template>
-  <main class="p-10">
+  <main class="p-10 w-1/3 mx-auto">
     <div class="relative h-10">
       <Transition name="fade" mode="out-in">
         <h1 class="absolute" v-if="showGreed">Hello World <br> 2121</h1>
